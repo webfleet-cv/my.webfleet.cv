@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="color-scheme" content="dark">
+		<title>Web Fleet</title>
+		<link rel="icon" href="assets/images/web-fleet-mark.svg" type="image/svg+xml">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<script defer src="assets/js/script.js"></script>
+	</head>
+	<body>
+		<main class="auth-stage" data-launcher data-product="webfleet" data-default-host="localhost" data-default-port="7336">
+		  <form class="auth-panel" data-config novalidate>
+		    <div class="brand-mark">WF</div><h1>Web Fleet</h1>
+		    <div class="error" data-error role="alert" hidden></div>
+		    <label>Domain or IP<input name="host" value="localhost" placeholder="localhost or https://webfleet.example.com" autocomplete="url" spellcheck="false"></label>
+		    <label>Port<input name="port" type="number" min="1" max="65535" value="7336" inputmode="numeric"></label>
+		    <div class="actions"><button type="submit">Save</button><button type="button" class="secondary" data-defaults>Use defaults</button></div>
+		    <button type="button" class="secondary open" data-open>Open Web Fleet</button>
+		  </form>
+		</main>
+	</body>
+</html>
